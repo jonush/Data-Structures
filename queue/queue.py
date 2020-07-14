@@ -1,4 +1,4 @@
-from singly_linked_list import Node, LinkedList
+from singly_linked_list import LinkedList
 
 """
 A queue is a data structure whose primary purpose is to store and
