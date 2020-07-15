@@ -105,6 +105,8 @@ class DoublyLinkedList:
             node.next = self.head
             self.head.prev = node
             self.head = node
+        elif node is self.head:
+            print('This node is already the head node')
         else:
             node.prev.next = node.next
             node.next.prev = node.prev
@@ -125,6 +127,8 @@ class DoublyLinkedList:
             node.prev = self.tail
             self.tail.next = node
             self.tail = node
+        elif node is self.tail:
+            print('This node is already the tail node')
         else:
             node.prev.next = node.next
             node.next.prev = node.prev
